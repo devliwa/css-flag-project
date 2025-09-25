@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project - Canada</title>
+  <style>
+    .flag {
+      width: 900px;
+      height: 600px;
+      position: relative;
+      display: flex;
+      background-color: white;
+    }
+
+    /* Red side bars */
+    .flag .red {
+      width: 200px;
+      height: 100%;
+      background-color: #FF0000;
+    }
+
+    /* White center with mabel leaf */
+    .flag .center {
+      flex: 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mabel-leaf {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      clip-path: polygon(
+        50% 0%, 58% 35%, 95% 35%, 62% 57%, 75% 100%, 50% 70%, 25% 100%, 38% 57%, 5% 35%, 42% 35%
+      );
+    }
+
+    p {
+      font-size: 3rem;
+      color: black;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <div class="red"></div>
+    <div class="center">
+      <div class="mabel-leaf"></div>
+    </div>
+    <div class="red"></div>
+  </div>
+  <p>Canada</p>
+</body>
+
+</html>
